@@ -20,7 +20,7 @@ export default function ServicesPage() {
         <div className="animate-glow absolute -right-40 -top-40 h-150 w-150 rounded-full bg-indigo/25 blur-[140px]" />
         <div className="relative mx-auto max-w-7xl">
           <Reveal direction="down" className="mb-8 flex items-center gap-3 text-xs font-semibold uppercase tracking-[.22em] text-mint"><span className="h-2 w-2 animate-pulse rounded-full bg-mint shadow-[0_0_16px_#a8e6cf]" />Our capabilities</Reveal>
-          <div className="grid gap-10 lg:grid-cols-[1fr_.45fr] lg:items-end"><h1 className="max-w-240 text-[clamp(3.4rem,7vw,7.5rem)] font-semibold leading-[.94] tracking-[-.065em]"><RevealLines lines={["Technology shaped around", <span key="g" className="bg-linear-to-r from-indigo-light to-mint bg-clip-text text-transparent">business progress.</span>]} /></h1><Reveal as="p" delay={400} className="max-w-145 text-base leading-8 text-white/55">We bring strategy, design, engineering, automation, and digital growth together, so each solution addresses a real gap instead of adding another disconnected tool.</Reveal></div>
+          <div className="grid gap-10 lg:grid-cols-[1fr_.45fr] lg:items-end"><h1 className="max-w-240 text-[clamp(3.4rem,7vw,7.5rem)] font-semibold leading-[1.06] tracking-[-.065em] [&_.line-mask]:mb-[-.06em]"><RevealLines lines={["Technology shaped around", <span key="g" className="bg-linear-to-r from-indigo-light to-mint bg-clip-text text-transparent">business progress.</span>]} /></h1><Reveal as="p" delay={400} className="max-w-145 text-base leading-8 text-white/55">We bring strategy, design, engineering, automation, and digital growth together, so each solution addresses a real gap instead of adding another disconnected tool.</Reveal></div>
       </div>
       </section>
 
