@@ -1,11 +1,19 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Playfair_Display, Poppins } from "next/font/google";
 import "./globals.css";
 
 const poppins = Poppins({
   variable: "--font-poppins",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
+  display: "swap",
+});
+
+const playfair = Playfair_Display({
+  variable: "--font-playfair-display",
+  subsets: ["latin"],
+  style: ["italic"],
+  weight: ["400", "500", "600"],
   display: "swap",
 });
 
@@ -18,9 +26,12 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={poppins.variable}
+      className={`${poppins.variable} ${playfair.variable}`}
     >
-      <body>{children}</body>
+      <body>
+        <noscript><style>{".reveal{opacity:1!important}"}</style></noscript>
+        {children}
+      </body>
     </html>
   );
 }

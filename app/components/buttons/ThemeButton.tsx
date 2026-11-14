@@ -26,7 +26,7 @@ const variants: Record<ButtonVariantType, string> = {
 const sizes = { sm: "min-h-10 px-4 py-2 text-xs", md: "min-h-12 px-6 py-3 text-sm", lg: "min-h-14 px-7 py-3.5 text-sm" };
 
 export default function ThemeButton({ children, href, variant = ButtonVariant.PRIMARY, icon, iconPosition = "end", fullWidth = false, size = "md", className = "", type = "button", ...props }: ThemeButtonProps) {
-  const classes = `group inline-flex items-center justify-center gap-2 rounded-full border font-semibold outline-none transition-all duration-300 focus-visible:ring-4 focus-visible:ring-indigo/25 ${sizes[size]} ${fullWidth ? "w-full" : "w-fit"} ${variants[variant]} ${className}`;
+  const classes = `group inline-flex items-center justify-center gap-2 rounded-full border font-semibold outline-none transition-all duration-300 active:scale-[.97] focus-visible:ring-4 focus-visible:ring-indigo/25 ${sizes[size]} ${fullWidth ? "w-full" : "w-fit"} ${variants[variant]} ${className}`;
   const content = <>{iconPosition === "start" && icon}{children}{iconPosition === "end" && icon}</>;
   if (href) {
     const external = href.startsWith("http");
