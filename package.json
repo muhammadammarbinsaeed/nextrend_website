@@ -9,9 +9,12 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@headlessui/react": "^2.2.10",
+    "formik": "^2.4.9",
     "next": "16.4.6",
     "react": "19.3.0",
-    "react-dom": "19.3.0"
+    "react-dom": "19.3.0",
+    "yup": "^1.7.1"
   },
   "devDependencies": {
     "@tailwindcss/turbopack": "4.3.3",
