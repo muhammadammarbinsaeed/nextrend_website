@@ -4,7 +4,7 @@ import { AlertIcon, ArrowUpRightIcon, ServiceIcon } from "@/public/icons";
 import { services } from "./data/services";
 
 const values = [
-  ["Business before buzzwords", "We start with the outcome your business needs—not a fashionable feature list."],
+  ["Business before buzzwords", "We start with the outcome your business needs, not a fashionable feature list."],
   ["Built around reality", "Your workflows, customers, resources, and ambitions shape the solution."],
   ["Designed for people", "Clear, inclusive experiences make adoption easier for customers and teams."],
   ["Ready for what’s next", "Modern foundations let your digital products improve as the business grows."],
@@ -53,7 +53,7 @@ export default function Home() {
           <div>
             <Reveal as="h2" className="font-display text-[clamp(2.6rem,6vw,6.2rem)] leading-[.98] tracking-[-.055em]">Technology is moving forward.<br /><span className="text-indigo">Is your business?</span></Reveal>
             <Reveal delay={150} className="mt-10 flex flex-col items-start justify-between gap-8 border-t border-slate-200 pt-8 md:flex-row">
-              <p className="max-w-175 text-base leading-8 text-slate-500 md:text-lg">Customers expect speed, clarity, and convenience. Teams need systems that reduce friction, not create more of it. The gap grows every day—but closing it can start with one smart move.</p>
+              <p className="max-w-175 text-base leading-8 text-slate-500 md:text-lg">Customers expect speed, clarity, and convenience. Teams need systems that reduce friction, not create more of it. The gap grows every day, but closing it can start with one smart move.</p>
               <ThemeButton href="#about" variant="ghost" className="h-14 w-14 shrink-0 border-slate-200 p-0 text-midnight hover:bg-midnight hover:text-white" aria-label="Learn about our approach" icon={<ArrowUpRightIcon className="h-5 w-5" />}><span className="sr-only">Learn about our approach</span></ThemeButton>
             </Reveal>
           </div>

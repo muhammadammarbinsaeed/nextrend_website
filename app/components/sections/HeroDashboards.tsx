@@ -94,7 +94,7 @@ function Healthcare() {
       </div>
       <div className="flex min-w-0 flex-1 flex-col">
         <div className="flex items-center justify-between border-b border-slate-100 px-5 py-3.5">
-          <div className="flex items-center gap-3"><h3 className="text-[17px] font-semibold">Schedule</h3><span className="text-[12px] text-slate-400">Nov 9 – 13, 2026</span></div>
+          <div className="flex items-center gap-3"><h3 className="text-[17px] font-semibold">Schedule</h3><span className="text-[12px] text-slate-400">Nov 9 to 13, 2026</span></div>
           <div className="flex items-center gap-2">
             <div className="flex rounded-lg border border-slate-200 p-0.5 text-[11px]">{["Day", "Week", "Month"].map((t) => <span key={t} className={`rounded-md px-3 py-1 ${t === "Week" ? "bg-slate-900 text-white" : "text-slate-500"}`}>{t}</span>)}</div>
             <span className="flex h-8 w-44 items-center gap-2 rounded-lg border border-slate-200 px-2.5 text-[11px] text-slate-400"><Icon name="search" size={13} />Search patients…</span>
@@ -292,7 +292,7 @@ function Saas() {
       </aside>
       <div className="flex min-w-0 flex-1 flex-col gap-3 p-4">
         <div className="flex items-center justify-between"><div><h3 className="text-[19px] font-semibold tracking-tight">Acquisition & retention</h3><div className="mt-2 flex gap-4 text-[12px] text-slate-500">{["Funnel", "Cohorts", "Channels", "Features"].map((t, i) => <span key={t} className={i === 0 ? "border-b-2 border-[#7c5cff] pb-1 font-semibold text-[#17132b]" : ""}>{t}</span>)}</div></div>
-          <div className="flex items-center gap-2 text-[11.5px]"><span className="rounded-lg border border-[#e4e0f3] bg-white px-3 py-2">Oct 5 – Nov 13 ▾</span><span className="rounded-lg border border-[#e4e0f3] bg-white px-3 py-2">All plans ▾</span><Avatar name="Jonas Weber" bg="#ede9fe" color="#6d3df5" size={34} /></div></div>
+          <div className="flex items-center gap-2 text-[11.5px]"><span className="rounded-lg border border-[#e4e0f3] bg-white px-3 py-2">Oct 5 to Nov 13 ▾</span><span className="rounded-lg border border-[#e4e0f3] bg-white px-3 py-2">All plans ▾</span><Avatar name="Jonas Weber" bg="#ede9fe" color="#6d3df5" size={34} /></div></div>
         <div className="grid grid-cols-[1.5fr_1fr] gap-4">
           <div className="rounded-2xl border border-[#ebe8f5] bg-white p-4">
             <div className="mb-2 flex items-center justify-between"><p className="text-[13px] font-semibold">Conversion funnel</p><span className="text-[11px] text-slate-400">Overall 2.4% · +0.4 pts</span></div>
@@ -325,11 +325,11 @@ function Saas() {
 type Dash = { id: string; brand: string; accent: string; label: string; url: string; tab: string; dark: boolean; Content: ComponentType; toast: { title: string; body: string } };
 
 export const dashboards: readonly Dash[] = [
-  { id: "healthcare", brand: "CareSync", accent: "#14b8a6", label: "Healthcare", url: "app.caresync.health/schedule", tab: "Schedule — CareSync", dark: false, Content: Healthcare, toast: { title: "Booking confirmed", body: "Sarah Mitchell · Fri 8:45 AM · Dr. Hart" } },
-  { id: "fintech", brand: "Paylane", accent: "#6477f5", label: "Fintech", url: "dashboard.paylane.io/overview", tab: "Overview — Paylane", dark: true, Content: Fintech, toast: { title: "Payment received", body: "+$5,100.00 from Northwind Traders" } },
-  { id: "ecommerce", brand: "Shopwave", accent: "#f2557a", label: "E-commerce & Retail", url: "admin.shopwave.store/orders", tab: "Orders — Shopwave", dark: false, Content: Ecommerce, toast: { title: "New order #10483", body: "$212.40 · 3 items · Express shipping" } },
-  { id: "logistics", brand: "RouteIQ", accent: "#f59e0b", label: "Logistics & Operations", url: "ops.routeiq.app/live", tab: "Live map — RouteIQ", dark: true, Content: Logistics, toast: { title: "Shipment NX-2048", body: "Out for delivery · ETA 14:20" } },
-  { id: "saas", brand: "Launchpad", accent: "#7c5cff", label: "Startups & SaaS", url: "app.launchpad.so/acquisition", tab: "Acquisition — Launchpad", dark: false, Content: Saas, toast: { title: "New signup", body: "Emma Collins started a Pro trial" } },
+  { id: "healthcare", brand: "CareSync", accent: "#14b8a6", label: "Healthcare", url: "app.caresync.health/schedule", tab: "Schedule | CareSync", dark: false, Content: Healthcare, toast: { title: "Booking confirmed", body: "Sarah Mitchell · Fri 8:45 AM · Dr. Hart" } },
+  { id: "fintech", brand: "Paylane", accent: "#6477f5", label: "Fintech", url: "dashboard.paylane.io/overview", tab: "Overview | Paylane", dark: true, Content: Fintech, toast: { title: "Payment received", body: "+$5,100.00 from Northwind Traders" } },
+  { id: "ecommerce", brand: "Shopwave", accent: "#f2557a", label: "E-commerce & Retail", url: "admin.shopwave.store/orders", tab: "Orders | Shopwave", dark: false, Content: Ecommerce, toast: { title: "New order #10483", body: "$212.40 · 3 items · Express shipping" } },
+  { id: "logistics", brand: "RouteIQ", accent: "#f59e0b", label: "Logistics & Operations", url: "ops.routeiq.app/live", tab: "Live map | RouteIQ", dark: true, Content: Logistics, toast: { title: "Shipment NX-2048", body: "Out for delivery · ETA 14:20" } },
+  { id: "saas", brand: "Launchpad", accent: "#7c5cff", label: "Startups & SaaS", url: "app.launchpad.so/acquisition", tab: "Acquisition | Launchpad", dark: false, Content: Saas, toast: { title: "New signup", body: "Emma Collins started a Pro trial" } },
 ];
 
 function MacScreen({ dash }: { dash: Dash }) {
